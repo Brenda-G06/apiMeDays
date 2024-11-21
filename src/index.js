@@ -12,8 +12,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({ origin: 'https://front-66iubc0aw-brenda-g06s-projects.vercel.app/' }));
-
-
+app.get('/', (req, res) => { res.send('API RODANDO');});
 app.use('/api', consultaRoutes);
 app.use('/usuarios', rotasUsuarios);
 app.use('/questionario', questionarioRoutes);
