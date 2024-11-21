@@ -8,5 +8,5 @@ router.get('/usuarios/:userName', getUserByUserName);
 router.get('/profile', authMiddleware, getUserProfile); 
 router.get('/cronograma', authMiddleware, obterCronograma);
 router.post('/login',authMiddleware, loginUser );
-router.put('/profile', authenticate, updateUserProfile);
+router.put('/profile', authMiddleware, updateUserProfile);
 module.exports = router;
