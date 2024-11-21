@@ -18,7 +18,7 @@ function sendConfirmationEmail(userEmail, token) {
         from: 'seuemail@gmail.com',  
         to: userEmail,  
         subject: 'Confirmação de Cadastro',  
-        text: `Olá, para confirmar seu cadastro, clique no link abaixo:\n${confirmationLink}`,  
+      
     };
 
     return transporter.sendMail(mailOptions)
