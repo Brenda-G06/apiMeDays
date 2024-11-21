@@ -11,7 +11,7 @@ const app = express();
 
 
 app.use(express.json());
-app.use(cors({ origin: 'https://front-ten-alpha.vercel.app/' }));
+app.use(cors({ origin: 'https://front-ten-alpha.vercel.app' }));
 app.get('/', (req, res) => { res.send('API RODANDO');});
 app.use('/api', consultaRoutes);
 app.use('/usuarios', rotasUsuarios);
