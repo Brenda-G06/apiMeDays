@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:frontend": "cd site-me && npm start",
-    "start:backend": "cd src && node index.js",
-    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start": "node src/index.js", 
     "dev": "nodemon src/index.js",
+    "start:frontend": "cd site-me && npm start",
+    "start:backend": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
